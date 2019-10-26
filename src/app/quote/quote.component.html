@@ -1,6 +1,8 @@
 <div>
 <h1>BEST FAMOUS QUOTES BY FAMOUS PEOPLE </h1>
 <ul>
-<li *ngFor='let quote of quotes'>{{quote.author}} {{quote.quote}} {{quote.submitter}}</li>
+<li *ngFor='let quote of quotes'>{{quote.author}} {{quote.quote}} {{quote.submitter}}
+<app-quote-details [quote]='quote'></app-quote-details>
+</li>
 </ul>
 </div>
