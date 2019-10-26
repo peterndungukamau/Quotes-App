@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotes';
+
+  quotes:string[];
+
+  constructor(){
+    this.quotes = ['"If you judge people, you have no time to love them. Mother Teresa "','"The greatest wealth is to live content with little. Plato "']
+  }
+
 }
