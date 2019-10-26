@@ -1,4 +1,6 @@
-<div class="container">
-<h1>Quotes</h1>
-<p>This are quotes from famous people {{ quote }}</p>
+<div>
+<h1>BEST FAMOUS QUOTES BY FAMOUS PEOPLE </h1>
+<ul>
+<li *ngFor='let quote of quotes'>{{quote.author}} {{quote.quote}} {{quote.submitter}}</li>
+</ul>
 </div>
