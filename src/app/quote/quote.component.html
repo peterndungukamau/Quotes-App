@@ -1,6 +1,8 @@
 <div class="container-fluid show">
 <h1>BEST FAMOUS QUOTES BY FAMOUS PEOPLE </h1>
 <hr>
+<div class="row">
+    <div class="col-md-6">
 <ul>
 <div *ngFor='let quote of quotes;let i = index'>
 <li>{{quote.author}} {{quote.quote}}</li>
@@ -8,6 +10,9 @@
 <app-quote-details *ngIf='quote.showMore' [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-details>
 </div>
 </ul>
+</div>
+<div class="col-md-6"><app-quote-form></app-quote-form></div>
+</div>
 </div>
 
 <style>
