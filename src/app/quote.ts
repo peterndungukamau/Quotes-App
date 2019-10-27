@@ -1,6 +1,10 @@
 export class Quote {
- author: string;
- quote: string;
- submitter: string;
- more: string;
+showMore: boolean;
+constructor(
+    public author: string,public quote: string,public  submitter: string,public more: string)
+{
+   this.showMore=false;
+}
+ 
+ 
 }

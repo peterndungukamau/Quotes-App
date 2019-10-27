@@ -1,9 +1,12 @@
 <div class="container-fluid show">
 <h1>BEST FAMOUS QUOTES BY FAMOUS PEOPLE </h1>
+<hr>
 <ul>
-<li *ngFor='let quote of quotes'>{{quote.author}} {{quote.quote}} {{quote.submitter}}
-<app-quote-details [quote]='quote'></app-quote-details>
-</li>
+<div *ngFor='let quote of quotes;let i = index'>
+<li>{{quote.author}} {{quote.quote}}</li>
+<button (click)='toggleDetails(i)'>More Quotes</button>
+<app-quote-details *ngIf='quote.showMore' [quote]='quote'></app-quote-details>
+</div>
 </ul>
 </div>
 

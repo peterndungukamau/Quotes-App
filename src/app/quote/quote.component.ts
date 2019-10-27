@@ -8,9 +8,13 @@ import { Quote } from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [ 
-    {author:'Mother Teresa', quote:'If you judge people, you have no time to love them.', submitter:'Peter', more:'another quote from Teresa'},
-    {author:'Plato', quote:'rrrr', submitter:'Paswell', more:'another quote from Plato'}
+   new Quote ('Mother Teresa', 'If you judge people, you have no time to love them.', 'Peter', 'another quote from Teresa'),
+    new Quote ('Plato', 'rrrr', 'Paswell', 'another quote from Plato'),
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showMore = !this.quotes[index].showMore;
+  }
 
   constructor() { }
 
