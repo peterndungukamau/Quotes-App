@@ -12,6 +12,11 @@ export class QuoteComponent implements OnInit {
     new Quote ('Plato', 'rrrr', 'Paswell', 'another quote from Plato'),
   ];
 
+  addNewQuote(quote){
+ let quoteLength = this.quotes.length; 
+  this.quotes.push(quote)
+  }
+
   deleteQuote(isRead, index){
   if (isRead){
   let toDelete = confirm(`Are You sure you want to delete ${this.quotes[index].author}?`)
