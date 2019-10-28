@@ -6,7 +6,8 @@
 <ul>
 <div  *ngFor='let quote of quotes;let i = index'>
 <li>{{ quote.author }}</li>
-<li>{{quote.quote}} was created on {{quote.publishDate|date}}</li>
+<li>{{quote.quote}}</li>
+<li>{{quote.publishDate|dateCount}} days since creation</li>
 <button (click)='toggleDetails(i)' class="btn btn-success">More Quotes</button>
 <app-quote-details *ngIf='quote.showMore' [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-details>
 </div>
@@ -19,5 +20,9 @@
 <style>
 .show  h1 {
         text-align: center;
+    }
+    ul li{
+        text-decoration:none;
+        list-style-type: none;
     }
 </style>

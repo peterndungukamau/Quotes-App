@@ -32,6 +32,14 @@
                             <p>Please enter another quote</p>
                             </div>
                 </div>
+                <div class="form-group">
+
+                        <label for="Creation Date">Completion</label>
+                        <input type='date' id="publish" [(ngModel)]="newQuote.publishDate" name="publishDate" #publishDate="ngModel" required>
+                        <div [hidden]="publishDate.valid || publishDate.pristine" class="alert alert-danger">
+                          <p>Date is required</p>
+                        </div>
+                    </div>
                 <button type="submit" class="btn btn-success">Submit Quote</button>
 </form>
 </div>
