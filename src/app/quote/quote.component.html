@@ -4,8 +4,9 @@
 <div class="row">
     <div class="col-md-6">
 <ul>
-<div *ngFor='let quote of quotes;let i = index'>
-<li>{{quote.author}} {{quote.quote}}</li>
+<div  *ngFor='let quote of quotes;let i = index'>
+<li>{{ quote.author }}</li>
+<li>{{quote.quote}} was created on {{quote.publishDate|date}}</li>
 <button (click)='toggleDetails(i)' class="btn btn-success">More Quotes</button>
 <app-quote-details *ngIf='quote.showMore' [quote]='quote' (isRead) = 'deleteQuote($event,i)'></app-quote-details>
 </div>

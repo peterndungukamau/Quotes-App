@@ -1,2 +1,5 @@
 <p>{{quote.more}}</p>
+<em><p>The Quote was submitted by:  {{quote.submitter}}</p></em>
+<span>{{quote.upvote}}</span><button (click)='quoteUpvote()'>Upvote quote</button>
+<span>{{quote.downvote}}</span><button (click)='quoteDownvote()'>Downvote quote</button>
 <button (click)='quoteDelete(true)'>Delete quote</button>
