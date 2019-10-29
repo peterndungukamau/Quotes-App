@@ -1,12 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
 
-   *{
-    background-image:url(./assets/img/bg8.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
-    color:white;
-   }
+  
 
 
     #btn1{
