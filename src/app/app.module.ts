@@ -10,6 +10,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { BestQuoteDirective } from './best-quote.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BestQuoteDirective } from './best-quote.directive';
     QuoteFormComponent,
     HighlightDirective,
     DateCountPipe,
-    BestQuoteDirective
+    BestQuoteDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

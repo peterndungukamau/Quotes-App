@@ -1,8 +1,30 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
 
   
+  body{
+    font-family: 'EB Garamond', serif;
+    font-size:20px;
+    font-weight: 400;
+    background-image:url(./assets/img/bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  color: white;
+  }
 
+  #quote,#submitter,#more,#publish,#author{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px white;
+  }
+
+  input{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px white;
+  }
 
     #btn1{
     background-color: #6eb4e2;
@@ -16,4 +38,13 @@
         border: none;
         border-radius: 5%;
         color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 3%;
+        }
+
+        .fa-heart{
+            color: red;
         }

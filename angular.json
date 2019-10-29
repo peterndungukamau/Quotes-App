@@ -118,8 +118,17 @@
               "devServerTarget": "Quotes:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/Quotes",
+            "netlifyToken": "b5cc0562fdcfe8f257498b0491e810519b6e3862ec98ef6174aa6a7cacfd4c4a",
+            "siteId": "a85f3e40-af50-4990-9d55-3de8cea769b4"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Quotes"
 }
