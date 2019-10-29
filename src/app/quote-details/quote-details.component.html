@@ -1,14 +1,6 @@
 <p>{{quote.more}}</p>
 <em><p>The Quote was submitted by:  {{quote.submitter}}</p></em>
-<span>{{quote.upvote}}</span><button (click)='quoteUpvote()'>Upvote quote<i class="fa fa-thumbs-up"></i></button>
-<span>{{quote.downvote}}</span><button (click)='quoteDownvote()'>Downvote quote<i class="fa fa-thumbs-down"></i></button>
+<span>{{quote.upvote}}</span><button id="btn1"(click)='quoteUpvote()'>Upvote quote<i class="fa fa-thumbs-up"></i></button>
+<span>{{quote.downvote}}</span><button id="btn1" (click)='quoteDownvote()'>Downvote quote<i class="fa fa-thumbs-down"></i></button><br><br>
 <button (click)='quoteDelete(true)'>Delete quote</button>
 
-<style>
-    button{
-    background-color: #6eb4e2;
-    border: none;
-    border-radius: 5%;
-    color: white;
-    }
-</style>
