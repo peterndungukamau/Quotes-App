@@ -13,6 +13,16 @@ export class QuoteComponent implements OnInit {
     new Quote ('-Martin Luther King Jr.', '“Love is the only force capable of transforming an enemy into friend.” ', 'Teka', '“Only in the darkness can you see the stars.”', 0, 0, new Date(2019,11,12)),
   ];
 
+  bestQuote() {
+    let upVoteArr: number[] = [];
+    for (let i of this.quotes) {
+      upVoteArr.push(i.upvote);
+    }
+    let maxVote = Math.max(...upVoteArr);
+    let highestVotedQuote = this.quotes.find(quote => quote.upvote === maxVote);
+    return highestVotedQuote;
+  }
+
   addNewQuote(quote){
  let quoteLength = this.quotes.length;
   quote.publishDate = new Date(quote.publishDate)

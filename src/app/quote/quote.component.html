@@ -1,7 +1,13 @@
 <div class="container-fluid show">
 <h1>BEST FAMOUS QUOTES BY FAMOUS PEOPLE </h1>
 <hr>
+
 <div class="row">
+        <div id="best-quote" appBestQuote *ngIf="bestQuote().upvote !== 0" class="col-md-12">
+                <p>{{bestQuote().quote}}</p>
+                <p>{{bestQuote().author}}</p>
+                <p>added by:{{bestQuote().submitter}}</p>
+              </div>
     <div class="col-md-6">
 <ul>
 <div  *ngFor='let quote of quotes;let i = index'>
