@@ -11,8 +11,8 @@ This is a simple Angular application that allows you to create quotes which allo
 The applications allows users to do the following:
 ​
 * Create a new quote.
-* Upvote or downvote a quote.
 * Delete a quote
+* Upvote or downvote a quote.
 * See the number of upvotes and number of downvotes for each quote.
 * Highlight the quote with the highest vote
 ​
@@ -48,9 +48,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Input	                     Output
 * User clicks Post Quote	  -Quote form displays with input fields for Author, Publisher
 * User Clicks Delete	   -The quote is purged from view
-* User clicks Upvote	   -upvote is incremented value by 1 on each click
-* User clicks Downvote	   -downvote is decremented value by 1 on each click
-​
+* User clicks Upvote	   -upvote is increased value by 1 on each click
+* User clicks Downvote	   -downvote is decreased value by 1 on each click
+​ * user clicks the upvote with - It highlights at the top
+the highest votes
 ## Further help
 ​
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
